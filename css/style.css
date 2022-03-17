@@ -17,18 +17,29 @@ div#carousel {
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
+    position: relative;
+    left: 78%;
+    transform: translateX(-50%);
 }
 
 div#carousel-title a {
     text-decoration: none;
+    font-size: 12px;
 }
 
-div#carousel-title  {
+div#carousel-title {
     display: block;
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
     font-weight: bold;
+    position: relative;
+    left: 53%;
+    transform: translateX(-50%);
+}
+
+div#carousel img {
+    height: 46vh;
 }
 
 header ul {
@@ -112,6 +123,7 @@ footer div {
 button:hover {
     background: #1b357e;
 }
+
 button {
     background: #1351d8;
     color: #fff;
