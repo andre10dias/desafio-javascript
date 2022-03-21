@@ -37,18 +37,21 @@
             </div>
             <div>
                 <h2 class="titulo">Sobre Você</h2>
-            <form onsubmit="Post(this);">
-                <input type="text" name="nome" placeholder="NOME*" class="fordform" required>
-                <input type="text" name="email" placeholder="E-MAIL*" class="fordform" required>
-                <input type="text" name="cpf" placeholder="CPF*" class="fordform" required>
-                <input type="text" name="sobrenome" placeholder="SOBRENOME*" class="fordform" required>
-                <input type="text" name="telefone" placeholder="TELEFONE*" class="fordform" required>
-                <select name="contato" class="fordform" required>
-                    <option selected>COMO DESEJA SER CONTATADO</option>
-                    <option>TELEFONE</option>
-                    <option>E-MAIL</option>
+            <form onsubmit="Post(event, this);">
+                <input type="text" id="nomeid" name="nome" placeholder="NOME*" class="fordform" required>
+                <input type="email" id="emailid" name="email" placeholder="E-MAIL*" class="fordform" required>
+                <input type="text" id="cpfid" name="cpf" placeholder="CPF*" class="fordform" required>
+                <input type="text" id="sobrenomeid" name="sobrenome" placeholder="SOBRENOME*" class="fordform" required>
+                <input type="text" id="telefoneid" name="telefone" placeholder="TELEFONE*" class="fordform" required>
+                <select id="contatoid" name="contato" class="fordform" required>
+                    <option value="" selected>TIPO DO CONTATO*</option>
+                    <option value="ELOGIO">Elogio</option value="">
+                    <option value="RECLAMACAO">Reclamação</option value="">
+                    <option value="SOLICITACAO">Solicitação</option>
                 </select>
-            <button type="submit">Enviar</button>
+                <textarea id="mensagemid" name="mensagem" placeholder="MENSAGEM*" rows="30" 
+                class="fordform" required></textarea>
+            <button type="submit" class="fordformbtn">Enviar</button>
             </form>
             </div>
         </div>
@@ -65,6 +68,6 @@
         <div>
            <img src="img/ford-96.png" width="70"  />
         </div>
-    </footer>    
+    </footer>  
 </body>
 </html>

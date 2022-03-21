@@ -7,12 +7,31 @@
     margin: 8px;
     font-size: 13px;
     padding: 5px;
+    color: #807d7d;
+    position:relative
+}
+
+.fordform:hover, .fordformbtn:hover {
+    top:-2px;
+    border-bottom:2px solid #999;
 }
 
 select.fordform {
     width: 310px;
     height: 36px;
-    color: #807d7d;
+}
+
+textarea.fordform {
+    height: 100px;
+    resize: vertical;
+}
+
+#mensagemid::placeholder {
+    font-size: 18px;
+}
+
+textarea:focus-visible {
+    outline: none;
 }
 
 input:focus-visible {
@@ -40,7 +59,6 @@ h2 {
     text-align: left;
     font-weight: 800;
 }
-
 
 button {
     width: 200px;
